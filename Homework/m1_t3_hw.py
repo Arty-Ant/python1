@@ -10,3 +10,6 @@
 функции типов: int(), float(), bool(), str()
 """
 # Ваш код
+flat = int(input("Введите номер квартиры: "))
+correction = flat%(28/7)!=0
+print(int(flat/(28/7)+correction))

@@ -22,8 +22,5 @@ Out:
 """
 a = int(input("a = "))
 b = int(input("b = "))
-result1 = a/b
-result2 = a//b
-correction = (result1!=result2)
-result = int(a/b)+correction
-print("result:", result)
+correction = (a%b!=0)
+print("result:", int(a/b)+correction)

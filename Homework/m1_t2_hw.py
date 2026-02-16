@@ -20,4 +20,10 @@ In:
 Out:
     result: 4
 """
-
+a = int(input("a = "))
+b = int(input("b = "))
+result1 = a/b
+result2 = a//b
+correction = (result1!=result2)
+result = int(a/b)+correction
+print("result:", result)

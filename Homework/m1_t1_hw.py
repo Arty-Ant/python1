@@ -10,3 +10,9 @@
 Подсказка: // и %
 """
 
+user_number = int(input("Введите трёхзначное число: "))
+first_number = user_number//100
+second_number = (user_number-first_number*100)//10
+third_number = user_number-(first_number*100+second_number*10)
+print("Палиндром вашего числа:",str(third_number*100)+str(second_number*10)+str(first_number))
+

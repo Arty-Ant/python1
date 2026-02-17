@@ -12,3 +12,16 @@ In: 24
 Out: 24 бутылки
 """
 # Ваш код
+
+qty=input("Введите количество бутылок, но не больше 5000: ")
+last_num=int(qty[-1])
+if int(qty)>5000:
+    print(f"У нас не более 5000 бутылок")
+elif int(qty)<0:
+    print(f"Не может быть отрицательного количества бутылок")
+elif 2<=last_num<=4:
+    print(f"{qty} бутылки")
+elif last_num==1:
+    print(f"{qty} бутылка")
+else:
+    print(f"{qty} бутылок")

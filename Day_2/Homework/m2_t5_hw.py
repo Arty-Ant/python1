@@ -28,3 +28,19 @@ Out: 'число неподходящее'
 In: 5678
 Out: 'число неподходящее'
 '''
+
+num=input("Введите любое двухзначное или трёхзначное число: ")
+qty=len(num)
+if qty==2:
+    print((int(num)//10)+(int(num)%10))
+elif qty==3:
+    if '00' in num:
+        print(num[0])
+    elif num[1]=='0':
+        print(int(num[0])*int(num[2]))
+    elif num[2]=='0':
+        print(int(num[0])*int(num[1]))
+    else:
+        print(int(num[0])*int(num[1])*int(num[2]))
+else:
+    print(f"Число {num} неподходящее")

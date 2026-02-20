@@ -1,0 +1,17 @@
+""" 3. Дан список. Нужно вернуть список, который состоит из элементов,
+       которые представлены в списке lst только в единственном экземпляре. 
+       Решение оформить в виде функции.
+"""
+
+lst = [1, 2, 3, 5, 'hello', 8.5, 13, 21, 34, 1, 21, 3, 3, 'hello', 'py', 8.5]
+# Ваш код
+def my_func(a:list):
+    result=a[:]
+    result1=[]
+    for item in result:
+        qty=result.count(item)
+        if qty==1:
+            result1.append(item)
+    return list(result1)
+
+print(my_func(lst))

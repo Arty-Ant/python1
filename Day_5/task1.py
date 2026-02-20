@@ -7,15 +7,15 @@ lst = [1, 2, 3, 5, 'hello', 8.5, 13, 21, 34, 1, 21, 3, 3, 'hello', 'py', 8.5]
 # Ваш код
 def my_func(a:list):
     """
-Оставляет только уникальные значения списка
-на входе принимает список
+    Оставляет только уникальные значения списка
+н   а входе принимает список
     """
-    result=a[:]
-    result1=[]
-    for item in result:
-        qty=result.count(item)
+    tmp=a[:]
+    result=[]
+    for item in tmp:
+        qty=tmp.count(item)
         if qty==1:
-            result1.append(item)
-    return list(result1)
+            result.append(item)
+    return list(result)
 
 print(my_func(lst))
